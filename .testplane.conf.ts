@@ -7,7 +7,7 @@ export default {
     sets: {
         desktop: {
             files: [
-                "testplane-tests/**/*.testplane.(t|j)s"
+                "test/testplane-tests/**/*.testplane.(t|j)s"
             ],
             browsers: [
                 "chrome"
