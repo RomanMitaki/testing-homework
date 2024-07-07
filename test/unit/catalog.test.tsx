@@ -58,6 +58,7 @@ describe('CatalogPage', () => {
             </MemoryRouter>)
 
         const productList = (await (screen.findByTestId('product-list'))).children
+        
         for (let i = 0; i < productList.length; i++) {
             const productOne = await (screen.findAllByTestId(fakeShortProducts[i].id));
             const productInfo = productOne[1];

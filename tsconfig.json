@@ -7,10 +7,12 @@
         "target": "es5",
         "allowJs": true,
         "jsx": "react",
-        "moduleResolution": "node"
+        "moduleResolution": "node",
+
+
     },
     "include": [
-        "src"
+        "src", "src/test/unit/setupTests.ts"
     ],
     "ts-node": {
         "compilerOptions": {
