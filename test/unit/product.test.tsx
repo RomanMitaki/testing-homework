@@ -26,9 +26,11 @@ describe('ProductPage', () => {
         expect(screen.getByText((content, element) => content.includes(`${price}`))).toBeInTheDocument();
         // @ts-ignore
         expect(screen.getByRole('button')).toHaveTextContent('Add to Cart');
+        // @ts-ignore
+        expect(screen.getByRole('button')).toHaveClass('btn-lg');
     });
 
-    it('should contain a message about if an item has already been added to the cart', async () => {
+    it('should contain a message about if an item has already been added to the cart    ', async () => {
         const id = 1;
         renderWithProviders(<ProductDetails product={fakeFullProducts[id]}/>)
         const buttonCart = screen.getByRole('button', { name: 'Add to Cart'});
